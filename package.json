@@ -1,0 +1,36 @@
+{
+  "name": "clash-ip-checker",
+  "version": "1.0.0",
+  "description": "Clash Node IP Checker - Node.js implementation",
+  "main": "clash_automator.js",
+  "type": "module",
+  "scripts": {
+    "start": "node clash_automator.js",
+    "test": "node ipcheck.js",
+    "build": "webpack --config webpack.config.cjs --mode production",
+    "build:dev": "webpack --config webpack.config.cjs --mode development"
+  },
+  "keywords": [
+    "clash",
+    "proxy",
+    "ip-checker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "http-proxy-agent": "^7.0.1",
+    "https-proxy-agent": "^7.0.2",
+    "js-yaml": "^4.1.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.0.0",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

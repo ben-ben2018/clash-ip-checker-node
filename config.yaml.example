@@ -1,0 +1,39 @@
+# --- Clash Automator Configuration (Template) ---
+# Rename this file to 'config.yaml' and fill in your details.
+
+# 1. API Connection
+# Default Clash External Controller URL (found in Settings)
+clash_api_url: "http://127.0.0.1:9097"
+# API Secret (found in Settings / "API Key", usually empty or "123456")
+clash_api_secret: ""
+
+# 2. Files
+# Full absolute path to your Clash Profile YAML
+# Tip: On Windows, use single quotes (' ') to avoid escaping backslashes.
+# Example: 'C:\Users\YourName\AppData\Roaming\clash\config.yaml'
+yaml_path: ''
+
+# Output file suffix (e.g., config_checked.yaml)
+output_suffix: "_checked"
+
+# 3. Automation Settings
+# How the script views the web (true = invisible, false = see the browser)
+headless: true
+
+# The "Selector" group in Clash to control (usually "GLOBAL" or "Proxy")
+selector_name: "GLOBAL"
+
+# 4. Filters
+# Keywords to skip testing (e.g., status info nodes)
+skip_keywords:
+  - "剩余"
+  - "到期"
+  - "有效期"
+  - "官网"
+  - "网址"
+  - "更新"
+  - "公告"
+  - "重置"
+  - "Expire" 
+  - "Traffic"
+
